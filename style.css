@@ -1,0 +1,100 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* distinct modern font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Dark gradient background */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+
+    /* Center everything perfectly */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p#myP {
+    font-size: 1.1rem;
+    color: #cfd8dc;
+    margin-bottom: 30px;
+}
+
+/* Style the input label */
+label {
+    font-size: 1.2rem;
+    display: block;
+    /* Forces it to its own line */
+    margin-bottom: 10px;
+}
+
+/* Style the input box */
+input#MyText {
+    padding: 12px 15px;
+    width: 250px;
+    border-radius: 25px;
+    /* Rounded pill shape */
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+    /* Replaces the <br> tags */
+}
+
+input#MyText:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+/* Style the Submit button */
+button#MySubmit {
+    padding: 12px 30px;
+    background-color: #00e676;
+    /* Bright Green */
+    color: #004d40;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button#MySubmit:hover {
+    background-color: #00c853;
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+button#MySubmit:active {
+    transform: translateY(0);
+}
+
+/* Style the result paragraphs */
+#p1,
+#p2 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    min-height: 1.5rem;
+    /* Keeps layout stable before results appear */
+    color: #81d4fa;
+    /* Light blue text for results */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
